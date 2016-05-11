@@ -1,22 +1,21 @@
 @font-face {
 	font-family: Alexandra Zeferino One;
-	src: url('fonts/alexandra_zeferino_one.ttf');
+	src: url('../fonts/alexandra_zeferino_one.ttf');
 }
 
 body {
     margin: 0;
-	padding: 0;
-	font-size: 85%;
+    padding: 0;
+   	font-size: 80%;
     font-style: italic;
 	background: #fff;
 }
 
 .header {
     width: 100%;
-    height: 1.53em;
+    height: 2%;
 	box-shadow: 0 3px 9px #363636;
-	border-bottom: 3px solid #000;
-    background: #fff;
+	background: #000;
     position: fixed;
     z-index: 3;
 }
@@ -34,26 +33,27 @@ body {
 
 .main-menu li {
 	display: inline-block;
-	width: 10em;
-	height: 1.5em;
+	width: 10%;
+	height: 2%;
 }
 
 .main-menu li:first-child {
 	margin-left: 4%;	
 }
 
-.main-menu li:hover {
-	background: #2F353B;
-}
-
 .main-menu a {
 	display: block;
 	margin: 0;
-	padding: 1px;
+	padding: 0.5%;
 	color: #fff;
     text-decoration: none;
     text-align: center;
+    transition: 1s ease-in-out;
 }
+
+.main-menu a:hover{
+    color: #FB6574;
+    }
 
 .mobile-menu {
     display: none;
@@ -86,6 +86,7 @@ body {
     height: 49em;
 }
 
+
 /*slide on css3*/
 
 @keyframes cfFadeInOut {
@@ -106,81 +107,33 @@ body {
     }
 }
 
-#slide img:nth-of-type(1) {
-    -webkit-animation-name: cfFadeInOut;
-    -webkit-animation-duration: 32s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-delay: 24s;
-
-    -moz-animation-name: cfFadeInOut;
-    -moz-animation-duration: 32s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: ease-in-out;
-    -moz-animation-delay: 24s;
-
-    -o-animation-name: cfFadeInOut;
-    -o-animation-duration: 32s;
-    -o-animation-iteration-count: infinite;
-    -o-animation-timing-function: ease-in-out;
-    -o-animation-delay: 24s;
+.slide img:nth-of-type(1) {
+    animation-name: cfFadeInOut;
+    animation-duration: 32s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 24s;
 }
-#slide img:nth-of-type(2) {
-    -webkit-animation-name: cfFadeInOut;
-    -webkit-animation-duration: 32s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-delay: 16s;
-
-    -moz-animation-name: cfFadeInOut;
-    -moz-animation-duration: 32s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: ease-in-out;
-    -moz-animation-delay: 16s;
-
-    -o-animation-name: cfFadeInOut;
-    -o-animation-duration: 32s;
-    -o-animation-iteration-count: infinite;
-    -o-animation-timing-function: ease-in-out;
-    -o-animation-delay: 16s;
+.slide img:nth-of-type(2) {
+    animation-name: cfFadeInOut;
+    animation-duration: 32s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 16s;
 }
-#slide img:nth-of-type(3) {
-    -webkit-animation-name: cfFadeInOut;
-    -webkit-animation-duration: 32s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-delay: 8s;
-
-    -moz-animation-name: cfFadeInOut;
-    -moz-animation-duration: 32s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: ease-in-out;
-    -moz-animation-delay: 8s;
-
-    -o-animation-name: cfFadeInOut;
-    -o-animation-duration: 32s;
-    -o-animation-iteration-count: infinite;
-    -o-animation-timing-function: ease-in-out;
-    -o-animation-delay: 8s;
+.slide img:nth-of-type(3) {
+    animation-name: cfFadeInOut;
+    animation-duration: 32s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 8s;
 }
-#slide img:nth-of-type(4) {
-    -webkit-animation-name: cfFadeInOut;
-    -webkit-animation-duration: 32s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-delay: 0s;
-
-    -moz-animation-name: cfFadeInOut;
-    -moz-animation-duration: 32s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: ease-in-out;
-    -moz-animation-delay: 0s;
-
-    -o-animation-name: cfFadeInOut;
-    -o-animation-duration: 32s;
-    -o-animation-iteration-count: infinite;
-    -o-animation-timing-function: ease-in-out;
-    -o-animation-delay: 0s;
+.slide img:nth-of-type(4) {
+    animation-name: cfFadeInOut;
+    animation-duration: 32s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
 }
 
 .my_name {
@@ -188,8 +141,8 @@ body {
     right: 20%;
     bottom: 45%;
     font-family: Alexandra Zeferino One;
-    font-size: 180%;
-    font-weight: lighter;
+    font-size: 1.9em;
+    letter-spacing: 0.1em;
     font-style: normal;
 }
 
@@ -219,15 +172,15 @@ body {
 }
 
 .icon-skype {
-    background-image: url(images/skype.png);
+    background-image: url(../images/skype.png);
 }
 
 .icon-facebook {
-    background-image: url(images/facebook.png);
+    background-image: url(../images/facebook.png);
 }
 
 .icon-mail {
-    background-image: url(images/mail.png);
+    background-image: url(../images/mail.png);
 }
 
 h1 {
@@ -316,7 +269,6 @@ p {
     display: table;
     color: #fff;
     box-shadow: 0 2px 5px #ccc;
-    margin-bottom: 5em;
 }
 
 .row {
@@ -368,31 +320,31 @@ p {
 }
 
 .container {
-    width: 907px;
-    margin: 2.2em auto;
+    width: 900px;
+    margin: 2.8em auto;
     border: 1px solid #eee;
-    box-shadow: 0 5px 30px #ccc;
+    box-shadow: 0 7px 30px #ccc;
     background: #fff;
 }
 
 .thumb {
     position: relative;
-    background: #fff;
     width: 300px;
     height: 200px;
     float: left;
     overflow: hidden;
-    border: 1px solid #eee;
+    background: #fff;
 }
 
 .content {
     position: absolute;
     top:0;
     left:0;
-    margin: 15px;
+    margin-left: 10px;
     font-family: Alexandra Zeferino One;
     font-size: 235%;
     font-style: normal;
+    letter-spacing: 0.06em;
 }
 
 .wrapper {
@@ -406,82 +358,39 @@ p {
 .wrapper img {
     width: 300px;
     height: 200px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
 }
 
 /*реализация на css3*/
 .content,
 .wrapper {
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
 }
 .wrapper:hover {
     opacity:0;
 }
 
-
-
-
 /*footer*/
 .footer {
-    position: relative;
     width: 100%;
-    height: 2.4em;
+    height: 1.5em;
     background: #000;
     clear:both;
 }
 
-h2 {
+h3 {
     color: #fff;
-    position: absolute;
-    left: 4%;
     font-weight: lighter;
     padding: 0;
-    margin: 0;
+    margin: 0 4%;
 }
 
-.contacts {
-    position: absolute;
-    right: 3%;
-    padding: 0.25%;
-    }
-
-.icons {
-    display: inline-block;
-    color: #fff;
-    width: 1.6em;
-    height: 1.6em;
-    margin-left: 0.8em;
-    background-repeat: no-repeat;
-    background-image: url(images/socialicons.png);
-    background-size: 1000%;
-}
-
-.icons:hover {
-    border-radius: 1em;
-}
-
-.iconSkype {
-    background-position: 75.3% 17.6%;
-}
-
-.iconFacebook {
-    background-position: 42.4% 17.6%;
-}
-
-.iconMail {
-    background-position: 58.7% 78.7%;
-}
-
-
-
-        @media screen and (max-width: 411px) {
+        @media screen and (max-width: 450px) {
             html, body {
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
+                    height: 100%;
+                }
+
 
             body {
                 font-size: 55%;
@@ -553,22 +462,8 @@ h2 {
             }
 
             .my_name {
-                position: absolute;
-                margin: 3em 2.5em;
-                /*right: 22%;
-                bottom: 45%;*/
-                font-family: Alexandra Zeferino One;
+                right: 6%;
                 font-size: 145%;
-            }
-
-
-
-            .block {
-                position: absolute;
-                margin: 2em 6em;
-                /*right: 15%;
-                bottom: 12%;*/
-                padding: 2%;
             }
 
             .icon {
@@ -580,7 +475,7 @@ h2 {
             }
 
             h1 {
-                padding-top: 0.7em;
+                padding-top: 1.1em;
                 padding-left: 1.3em;
             }
 
@@ -667,7 +562,7 @@ h2 {
 
 
             .container {
-                width: 266px;
+                width: 260px;
                 margin: 1px auto;
                 font-size: 60%;
             }
@@ -686,26 +581,31 @@ h2 {
                 width: 130px;
                 height: 80px;
             }
-
+            
         }
 
-        @media screen and (min-width: 412px) and (max-width: 760px) {
-            .header {
-                width: 760px;
-                          }
+        @media screen and (min-width: 451px) and (max-width: 786px) {
+             .header {
+                width: 782px;
+            }
+
+            .main-menu li {
+                width: 16%;
+                height: 2%;
+            }
 
             .slide_box {
-                       width: 760px;
+                width: 782px;
             }
 
             .layout-column {
-                width: 760px;
+                width: 782px;
                 min-height: 22em;
             }
 
             .bgeducation,
             .bgeducation>img {
-                width: 760px;
+                width: 782px;
             }
 
             .footer {
@@ -713,14 +613,9 @@ h2 {
             }
         }
 
-
-
-       @media screen and (min-width: 761px) and (max-width: 1024px) {
-           html, body
-           {
+       @media screen and (min-width: 787px) and (max-width: 1069px) {
+           html, body {
                height:100%;
-               margin: 0;
-               padding: 0;
            }
 
            body {
@@ -732,12 +627,12 @@ h2 {
            }
 
            .layout-column {
-               min-height: 16.2em;
+               min-height: 19em;
                margin: 0.5em auto;
            }
 
            .container {
-               width: 726px;
+               width: 720px;
            }
 
            .thumb {
@@ -757,14 +652,10 @@ h2 {
 
        }
 
-
        @media screen and (min-width: 1282px) and (max-width: 1366px)  {
 
-           html, body
-           {
+           html, body {
                height:100%;
-               margin: 0;
-               padding: 0;
            }
 
            .slide,.slide img, .transparent {
@@ -780,11 +671,8 @@ h2 {
 
         @media screen and (min-width: 1367px) and (max-width: 1440px) {
 
-            html, body
-            {
+            html, body {
                 height:100%;
-                margin: 0;
-                padding: 0;
             }
 
             .slide,.slide img, .transparent {
@@ -797,7 +685,7 @@ h2 {
             }
 
             .container {
-                width: 1086px;
+                width: 1080px;
             }
 
             .thumb {
@@ -818,11 +706,8 @@ h2 {
         }
 
         @media screen and (min-width: 1441px) and (max-width: 1600px) {
-            html, body
-            {
+            html, body {
                 height:100%;
-                margin: 0;
-                padding: 0;
             }
 
             .slide,.slide img, .transparent {
@@ -835,7 +720,7 @@ h2 {
             }
 
             .container {
-                width: 1086px;
+                width: 1080px;
             }
 
             .thumb {
@@ -855,15 +740,10 @@ h2 {
 
         }
 
-
-
         @media screen and (min-width: 1601px) and (max-width: 1920px) {
 
-            html, body
-            {
+            html, body {
                 height:100%;
-                margin: 0;
-                padding: 0;
             }
 
             body {
@@ -891,7 +771,7 @@ h2 {
             }
 
             .container {
-                width: 1356px;
+                width: 1350px;
             }
 
             .thumb {
@@ -908,14 +788,12 @@ h2 {
                 width: 450px;
                 height: 300px;
             }
-            }
+        }
 
-            @media screen and (min-width: 1921px) and (max-width: 2561px) {
+            @media screen and (min-width: 1921px) and (max-width: 3200px) {
 
                 html, body {
                     height: 100%;
-                    margin: 0;
-                    padding: 0;
                 }
 
                 body {
@@ -952,7 +830,7 @@ h2 {
                 }
 
                 .container {
-                    width: 1656px;
+                    width: 1650px;
                 }
 
                 .thumb {
@@ -970,6 +848,3 @@ h2 {
                     height: 400px;
                 }
             }
-
-
-
