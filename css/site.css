@@ -168,10 +168,10 @@ header {
 .icon {
     display: inline-block;
     color: #000;
-    width: 4.2em;
-    height: 4.2em;
+    width: 67px;
+    height: 67px;
     border-radius: 50%;
-    margin-left: 1.5em;
+    margin-left: 24px;
     opacity: 0.7;
     background-size: cover;
     background-repeat: no-repeat;
@@ -204,13 +204,13 @@ h2 {
 
 .layout-column {
     border: 1px solid #ccc;
-    margin: 0.5em auto;
+    margin: 8px auto;
     width: 95%;
-    min-height: 18em;
+    min-height: 218px;
     font-style: italic;
-    font-size: 0.9em;
     box-shadow: 0 1px 5px #ccc;
     position: relative;
+    font-size: 0.9em;
 }
 
 .layout-column .column1,
@@ -246,31 +246,28 @@ h2 {
 
 /*-----EDUCATION-----*/
 
-.education {
-   font-size: 0.9em;
-}
-
 .bgeducation {
     position: relative;
 }
-.bgeducation img {
 
+.bgeducation img {
     width: 100%;
-    height: 37em;
+    height: 520px;
 }
 
 .table {
     position: absolute;
     left: 2.5%;
-    top:2em;
+    top:28px;
     width: 95%;
-    height: 33em;
+    height: 465px;
     background: rgba(76, 72, 72, 0.3);
     border: 1px solid #fff;
     display: table;
     color: #fff;
     box-shadow: 0 2px 5px #ccc;
     z-index: 10;
+    font-size: 0.9em;
 }
 
 .row {
@@ -290,11 +287,11 @@ h2 {
 .data {
     background: #2F353B;
     color: #fff;
-    height: 5em;
+    height: 60px;
 }
 
 .round {
-    height: 7em;
+    height: 80px;
 }
 
 .column1 {
@@ -421,10 +418,6 @@ footer p {
 
         @media screen and (min-width: 1367px) and (max-width: 1600px) {
 
-            .layout-column {
-                min-height: 18.7em;
-            }
-
             .container {
                 width: 1088px;
             }
@@ -443,16 +436,17 @@ footer p {
                 font-size: 4.5em;
             }
 
-            .layout-column {
-                min-height: 21.5em;
-            }
+            /*.layout-column {
+                min-height: 230px;
+            }*/
 
             .cell1 {
                 width: 20%;
             }
 
             .cell2 {
-                width: 60%;
+                width: 40%;
+                margin-right: 15%;
             }
 
             .container {
